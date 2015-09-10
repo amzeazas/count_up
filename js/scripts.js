@@ -1,9 +1,9 @@
-var countUp = function(target) {
+var countUp = function(target, by) {
   var current = 0;
   var output = "";
   do {
-    current = current + 1;
-    if (current === 1) {
+    current = current + by;
+    if (current === by) {
       output = current;
     } else {
       output = output + "," + current;
